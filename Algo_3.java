@@ -1,0 +1,24 @@
+public class Algo_3 {
+    public static void main(String[] args) {
+
+        int[] nums = {10, 20, 30, 40, 50};
+        int[] tempArray = new int[nums.length];
+
+        int x = 0;
+        int y = nums.length - 1;
+        
+        while (x < nums.length) {
+            tempArray[y] = nums[x];
+            x++;
+            y--;
+        } 
+
+        nums = tempArray;
+
+        System.out.print("Opposite Sequence : [");
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i] + ", ");
+        }
+        System.out.println("\b\b]");
+    }
+}
