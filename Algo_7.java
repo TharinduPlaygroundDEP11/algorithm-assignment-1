@@ -4,16 +4,16 @@ public class Algo_7 {
     private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
-        String inputSentence = "aaabbbccc asdbsj a asdjas asdhb asfhasdbkjdJ SDFBASJK AD";
+        String inputSentence;
 
-        // do {
-        //     System.out.print("Input a sentence : ");
-        //     inputSentence = scanner.nextLine();
-        //     if (inputSentence.isBlank()) {
-        //         System.out.println("Sentence can not be empty!");
-        //     }
+        do {
+            System.out.print("Input a sentence : ");
+            inputSentence = scanner.nextLine();
+            if (inputSentence.isBlank()) {
+                System.out.println("Sentence can not be empty!");
+            }
             
-        // } while (inputSentence.isBlank());
+        } while (inputSentence.isBlank());
         
       String[] wordsArray = inputSentence.split("[ ,.]");
 
